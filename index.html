@@ -1,0 +1,1066 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="styles.css">
+    <link href="https://cdn.jsdelivr.net/npm/flowbite@3.1.2/dist/flowbite.min.css" rel="stylesheet" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css"
+        integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Pixelify+Sans:wght@400..700&display=swap" rel="stylesheet">
+    <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+</head>
+
+<body>
+
+    <nav class=" bg-black/80 fixed top-0 left-0 right-0 z-50 border-gray-700 p-0 my-0">
+        <div class="max-w-screen-xl flex flex-wrap items-center justify-between mx-auto p-4">
+            <a href="#" class="flex items-center space-x-3 rtl:space-x-reverse">
+
+            </a>
+            <button data-collapse-toggle="navbar-solid-bg" type="button"
+                class="right-0 inline-flex items-center p-2 w-10 h-10 justify-center text-sm text-gray-500 rounded-lg md:hidden hover:bg-gray-100 focus:outline-none focus:ring-2 focus:ring-gray-200 dark:text-gray-400 dark:hover:bg-gray-700 dark:focus:ring-gray-600"
+                aria-controls="navbar-solid-bg" aria-expanded="false">
+                <span class="sr-only">Open main menu</span>
+                <svg class="w-5 h-5" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="none"
+                    viewBox="0 0 17 14">
+                    <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                        d="M1 1h15M1 7h15M1 13h15" />
+                </svg>
+            </button>
+            <div class="hidden w-full md:block md:w-auto" id="navbar-solid-bg">
+                <ul
+                    class="flex flex-col font-medium mt-4 rounded-lg bg-gray-50 md:space-x-8 rtl:space-x-reverse md:flex-row md:mt-0 md:border-0 md:bg-transparent dark:bg-gray-800 md:dark:bg-transparent dark:border-gray-700">
+                    <li>
+                        <a href="#about"
+                            class="nav-link block py-2 px-3 font-normal text-md md:p-0 text-white rounded-sm hover:bg-gray-100 md:hover:bg-transparent md:border-0 md:hover:text-amber-200 dark:text-white md:dark:hover:text-amber-200 dark:hover:bg-gray-700 dark:hover:green-400 md:dark:hover:bg-transparent what-i-do-heading">
+                            About</a>
+                    </li>
+                    <li>
+                        <a href="#services-animated"
+                            class="nav-link block py-2 px-3 md:p-0 text-white rounded-sm hover:bg-gray-100 md:hover:bg-transparent md:border-0 md:hover:text-amber-200 dark:text-white md:dark:hover:text-amber-200 dark:hover:bg-gray-700 dark:hover:green-400 md:dark:hover:bg-transparent what-i-do-heading">
+                            Services</a>
+                    </li>
+                    <li>
+                        <a href="#skills"
+                            class="nav-link block py-2 px-3 md:p-0 text-white rounded-sm hover:bg-gray-100 md:hover:bg-transparent md:border-0 md:hover:text-amber-200 dark:text-white md:dark:hover:text-amber-200 dark:hover:bg-gray-700 dark:hover:green-400 md:dark:hover:bg-transparent what-i-do-heading">
+                            Skills</a>
+                    </li>
+                    <li>
+                        <a href="#projects"
+                            class="nav-link block py-2 px-3 md:p-0 text-white rounded-sm hover:bg-gray-100 md:hover:bg-transparent md:border-0 md:hover:text-amber-200 dark:text-white md:dark:hover:text-amber-200 dark:hover:bg-gray-700 dark:hover:text-white md:dark:hover:bg-transparent what-i-do-heading">
+                            Projects</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+    <header>
+        <section class="pt-20">
+            <div
+                class="xl:w-[70%] lg:w-[80%] md:w-[90%] mx-auto relative md:px-0 px-4 md:my-10 bg-[#111111] rounded-xl overflow-hidden">
+
+                <!-- Parallax Container -->
+                <div class="w-full h-full flex flex-col items-center bg-black relative overflow-hidden"
+                    id="parallax-hero">
+                    <!-- Parallax Background Layer -->
+                    <div id="parallax-bg"
+                        style="background: black; position: absolute; inset: 0; z-index: 0; transition: transform 0.2s; will-change: transform;">
+                    </div>
+                    <!-- Hero Section -->
+                    <section class="w-full relative flex items-center flex-col lg:flex-row z-10" id="about">
+                        <div class="lg:block md:hidden sm:hidden hidden" id="parallax-img-container"
+                            style="will-change: transform;">
+                            <img class="lg:w-1/2" src="images/IMG_2239.JPG" alt="port image" id="parallax-img">
+                        </div>
+                        <div class="md:mt-20 animate-slide-in-lr lg:absolute lg:left-[40%] md:left-[30%] lg:w-[55%] lg:p-12 sm:p-6 p-4 flex flex-col justify-center bg-[#222222]"
+                            id="parallax-content" style="will-change: transform;">
+                            <p class="text-gray-200 text-md mb-1 typing">
+                                <span id="typing"></span>
+                            </p>
+                            <h2 class="text-white md:text-5xl text-2xl font-bold mb-4">Geo Obero</h2>
+                            <p class="text-gray-400 text-md mb-6">
+                                I am an aspiring, dedicated and innovative FullStack Developer passionate about creating
+                                impactful
+                                digital experiences. With a keen eye for detail and a commitment to excellence, I
+                                specialize in designing
+                                and developing solutions that combine creativity with functionality.
+                            </p>
+                            <div>
+                                <button
+                                    class="md:px-6 px-4 py-2 text-white font-semibold cursor-pointer outline outline-green-400 rounded-full hover:outline-gray-200 hover:bg-green-700">Download
+                                    CV</button>
+                            </div>
+                        </div>
+                    </section>
+                </div>
+            </div>
+            <div class="w-full items-center flex flex-col">
+                <ul class="flex flex-row mt-2 gap-10">
+                    <li class="mx-2">
+                        <a href="" target="_blank" aria-label="GitHub">
+                            <i class="fa-brands fa-github text-2xl text-gray-400 hover:text-green-500"></i>
+                        </a>
+                    </li>
+
+                    <li class="mx-2">
+                        <a href="" target="_blank" aria-label="upwork">
+                            <i class="fa-brands fa-square-upwork text-2xl text-gray-400 hover:text-green-500"></i>
+                        </a>
+                    </li>
+
+                    <li class="mx-2">
+                        <a href="" target="_blank" aria-label="facebook">
+                            <i class="fa-brands fa-facebook text-2xl text-gray-400 hover:text-green-500"></i>
+                        </a>
+                    </li>
+
+                    <li class="mx-2">
+                        <a href="#" target="_blank" aria-label="Email">
+                            <i class="fa-solid fa-envelope text-2xl text-gray-400 hover:text-green-500">
+                                <title>Email</title>
+                            </i>
+                        </a>
+                    </li>
+
+                </ul>
+            </div>
+        </section>
+    </header>
+
+    <main>
+        <!-- Services section -->
+        <section class="md:pt-20 mt-40 md:px-20 px-2" id="services-animated">
+            <div class="w-fit">
+                <h2 class="lg:text-2xl font-thin text-gray-300 pb-2 flex md:text-2xl sm:text-2xl">Services <span>
+                        <hr class="w-30 mt-5 ml-2 text-gray-300">
+                    </span></h2>
+                <h1 class="text-4xl text-white">What I do</h1>
+            </div>
+            <div class="mt-15">
+                <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-2 md:px-0 lg:px-15 gap-6 lg:gap-15 mt-10">
+                    <div
+                        class="bg-black p-6 rounded-lg shadow-lg opacity-0 translate-y-10 transition-all duration-700 service-card">
+                        <div class="items-center flex flex-col justify-center">
+                            <svg class="w-15 h-15 text-green-400 dark:text-green-400" aria-hidden="true"
+                                xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="none"
+                                viewBox="0 0 24 24" style="filter: drop-shadow(0 0 8px #22c55e);">
+                                <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round"
+                                    stroke-width="2" d="m8 8-4 4 4 4m8 0 4-4-4-4m-2-3-4 14" />
+                            </svg>
+                            <h3 class="text-xl font-semibold text-white mb-2">Web
+                                Development</h3>
+                            <p class="text-gray-400">
+                                Building responsive and dynamic websites using modern technologies.
+                                Experienced with HTML, CSS, JavaScript, Vue.js, Node.js, and more.
+                            </p>
+                        </div>
+                    </div>
+                    <div
+                        class="bg-black p-6 rounded-lg shadow-lg opacity-0 translate-y-10 transition-all duration-700 service-card">
+                        <div class="items-center flex flex-col justify-center">
+                            <svg class="w-15 h-15 text-green-400 dark:text-green-400" aria-hidden="true"
+                                xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="currentColor"
+                                viewBox="0 0 24 24" style="filter: drop-shadow(0 0 2px #22c55e);">
+                                <path fill-rule="evenodd"
+                                    d="M4 4a2 2 0 0 0-2 2v12a2 2 0 0 0 2 2h16a2 2 0 0 0 2-2V6a2 2 0 0 0-2-2H4Zm10 5a1 1 0 0 1 1-1h3a1 1 0 1 1 0 2h-3a1 1 0 0 1-1-1Zm0 3a1 1 0 0 1 1-1h3a1 1 0 1 1 0 2h-3a1 1 0 0 1-1-1Zm0 3a1 1 0 0 1 1-1h3a1 1 0 1 1 0 2h-3a1 1 0 0 1-1-1Zm-8-5a3 3 0 1 1 6 0 3 3 0 0 1-6 0Zm1.942 4a3 3 0 0 0-2.847 2.051l-.044.133-.004.012c-.042.126-.055.167-.042.195.006.013.02.023.038.039.032.025.08.064.146.155A1 1 0 0 0 6 17h6a1 1 0 0 0 .811-.415.713.713 0 0 1 .146-.155c.019-.016.031-.026.038-.04.014-.027 0-.068-.042-.194l-.004-.012-.044-.133A3 3 0 0 0 10.059 14H7.942Z"
+                                    clip-rule="evenodd" />
+                            </svg>
+                            <h3 class="text-xl font-semibold text-white mb-2">UI/UX Design</h3>
+                            <p class="text-gray-400">
+                                Creating user-friendly interfaces and enhancing user experience.
+                                Skilled in wireframing, prototyping, and designing intuitive layouts.
+                            </p>
+                        </div>
+                    </div>
+                    <div
+                        class="bg-black p-6 rounded-lg shadow-lg opacity-0 translate-y-10 transition-all duration-700 service-card">
+                        <div class="items-center flex flex-col justify-center">
+                            <svg class="w-15 h-15 text-green-400 dark:text-green-400" aria-hidden="true"
+                                xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="none"
+                                viewBox="0 0 24 24" style="filter: drop-shadow(0 0 8px #22c55e);">
+                                <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round"
+                                    stroke-width="2" d="m16 10 3-3m0 0-3-3m3 3H5v3m3 4-3 3m0 0 3 3m-3-3h14v-3" />
+                            </svg>
+                            <h3 class="text-xl font-semibold text-white mb-2">API integration</h3>
+                            <p class="text-gray-400">Designing and implementing robust APIs for seamless
+                                integration.
+                            </p>
+                        </div>
+                    </div>
+                    <div
+                        class="bg-black p-6 rounded-lg shadow-lg opacity-0 translate-y-10 transition-all duration-700 service-card">
+                        <div class="items-center flex flex-col justify-center">
+                            <svg class="w-15 h-15 text-green-400 dark:text-green-400" aria-hidden="true"
+                                xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="none"
+                                viewBox="0 0 24 24" style="filter: drop-shadow(0 0 2px #22c55e);">
+                                <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round"
+                                    stroke-width="2"
+                                    d="M5 12a1 1 0 0 0-1 1v4a1 1 0 0 0 1 1h14a1 1 0 0 0 1-1v-4a1 1 0 0 0-1-1M5 12h14M5 12a1 1 0 0 1-1-1V7a1 1 0 0 1 1-1h14a1 1 0 0 1 1 1v4a1 1 0 0 1-1 1m-2 3h.01M14 15h.01M17 9h.01M14 9h.01" />
+                            </svg>
+                            <h3 class="text-xl font-semibold text-white mb-2">Hosting & Deployment</h3>
+                            <p class="text-gray-400">Deploying and managing websites and applications on reliable
+                                hosting
+                                platforms.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+
+        <!-- Skills section -->
+        <section class="md:pt-20 mt-40 md:px-20 px-2" id="skills">
+            <div class="w-fit">
+                <h2 class="lg:text-2xl font-thin text-gray-300 pb-2 flex md:text-2xl sm:text-2xl">My Skills <span>
+                        <hr class="w-30 mt-5 ml-2 text-gray-300">
+                    </span></h2>
+            </div>
+
+            <!-- Logo Section -->
+            <section aria-label="Technologies I work with" class="py-8">
+                <div class="relative overflow-hidden">
+                    <div class="flex items-center py-4 animate-marquee whitespace-nowrap">
+                        <div class="inline-flex items-center justify-center mx-8">
+                            <i class="fa-brands fa-html5 text-5xl text-orange-500"></i>
+                        </div>
+                        <div class="inline-flex items-center justify-center mx-8">
+                            <i class="fa-brands fa-css3-alt text-5xl text-blue-500"></i>
+                        </div>
+                        <div class="inline-flex items-center justify-center mx-8">
+                            <i class="fa-brands fa-js-square text-5xl text-yellow-400"></i>
+                        </div>
+                        <div class="inline-flex items-center justify-center mx-8">
+                            <i class="fa-brands fa-vuejs text-5xl text-green-500"></i>
+                        </div>
+                        <div class="inline-flex items-center justify-center mx-8">
+                            <i class="fa-brands fa-react text-5xl text-cyan-400"></i>
+                        </div>
+                        <div class="inline-flex items-center justify-center mx-8">
+                            <i class="fa-brands fa-node-js text-5xl text-green-600"></i>
+                        </div>
+                        <div class="inline-flex items-center justify-center mx-8">
+                            <i class="fa-solid fa-database text-5xl text-blue-700"></i>
+                        </div>
+                        <div class="inline-flex items-center justify-center mx-8">
+                            <i class="fa-brands fa-css3-alt text-5xl text-teal-400" title="Tailwind CSS"></i>
+                        </div>
+                        <div class="inline-flex items-center justify-center mx-8">
+                            <i class="fa-brands fa-bootstrap text-5xl text-purple-600"></i>
+                        </div>
+                        <!-- Latest Vite logo SVG -->
+                        <div class="inline-flex items-center justify-center mx-8">
+                            <div
+                                style="background: linear-gradient(135deg, #41d1ff 0%, #bd34fe 100%); border-radius: 16px; padding: 6px; box-shadow: 0 0 16px 0 #bd34fe44;">
+                                <img src="/images/Vite.js.svg" alt="Vite logo"
+                                    style="width: 30px; height: 30px; display: block; filter: drop-shadow(0 0 8px #41d1ff);">
+                            </div>
+                        </div>
+                        <!-- Duplicate for seamless looping (hidden from screen readers) -->
+                        <div aria-hidden="true" class="inline-flex items-center">
+                            <div class="inline-flex items-center justify-center mx-8">
+                                <i class="fa-brands fa-html5 text-5xl text-orange-500"></i>
+                            </div>
+                            <div class="inline-flex items-center justify-center mx-8">
+                                <i class="fa-brands fa-css3-alt text-5xl text-blue-500"></i>
+                            </div>
+                            <div class="inline-flex items-center justify-center mx-8">
+                                <i class="fa-brands fa-js-square text-5xl text-yellow-400"></i>
+                            </div>
+                            <div class="inline-flex items-center justify-center mx-8">
+                                <i class="fa-brands fa-vuejs text-5xl text-green-500"></i>
+                            </div>
+                            <div class="inline-flex items-center justify-center mx-8">
+                                <i class="fa-brands fa-react text-5xl text-cyan-400"></i>
+                            </div>
+                            <div class="inline-flex items-center justify-center mx-8">
+                                <i class="fa-brands fa-node-js text-5xl text-green-600"></i>
+                            </div>
+                            <div class="inline-flex items-center justify-center mx-8">
+                                <i class="fa-solid fa-database text-5xl text-blue-700"></i>
+                            </div>
+                            <div class="inline-flex items-center justify-center mx-8">
+                                <i class="fa-brands fa-css3-alt text-5xl text-teal-400" title="Tailwind CSS"></i>
+                            </div>
+                            <div class="inline-flex items-center justify-center mx-8">
+                                <i class="fa-brands fa-bootstrap text-5xl text-purple-600"></i>
+                            </div>
+                            <!-- Latest Vite logo SVG duplicate -->
+                            <div class="inline-flex items-center justify-center mx-8">
+                                <div
+                                    style="background: linear-gradient(135deg, #41d1ff 0%, #bd34fe 100%); border-radius: 16px; padding: 6px; box-shadow: 0 0 16px 0 #bd34fe44;">
+                                    <img src="images/Vite.js.svg" alt="Vite logo"
+                                        style="width: 30px; height: 30px; display: block; filter: drop-shadow(0 0 8px #41d1ff);">
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <div class="mt-15">
+                <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-2 gap-3 lg:gap-5 mt-10 max-w-[1200px] mx-auto">
+                    <div
+                        class="bg-slate-400/20 p-6 rounded-lg shadow-lg flex flex-col items-center relative overflow-hidden">
+                        <div class="w-full mb-2 relative z-10">
+                            <div class="mb-5">
+                                <div class="flex flex-row justify-between">
+                                    <h3 class="text-gray-300 text-sm">HTML</h3>
+                                    <h3 class="text-gray-300 text-sm"><span class="skill-percentage"
+                                            data-percentage="95">0</span>%</h3>
+                                </div>
+                                <div class="w-full bg-gray-700 rounded-full h-2">
+                                    <div class="bg-green-400 h-2 rounded-full skill-bar" data-percentage="89"
+                                        style="width: 0%"></div>
+                                </div>
+                            </div>
+                            <div class="mb-5">
+                                <div class="flex flex-row justify-between">
+                                    <h3 class="text-gray-300 text-sm">CSS</h3>
+                                    <h3 class="text-gray-300 text-sm"><span class="skill-percentage"
+                                            data-percentage="90">0</span>%</h3>
+                                </div>
+                                <div class="w-full bg-gray-700 rounded-full h-2">
+                                    <div class="bg-green-400 h-2 rounded-full skill-bar" data-percentage="85"
+                                        style="width: 0%"></div>
+                                </div>
+                            </div>
+                            <div>
+                                <div class="flex flex-row justify-between">
+                                    <h3 class="text-gray-300 text-sm">JavaScript</h3>
+                                    <h3 class="text-gray-300 text-sm"><span class="skill-percentage"
+                                            data-percentage="88">0</span>%</h3>
+                                </div>
+                                <div class="w-full bg-gray-700 rounded-full h-2">
+                                    <div class="bg-green-400 h-2 rounded-full skill-bar" data-percentage="79"
+                                        style="width: 0%"></div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- Skill Card: Bootstrap, Tailwind CSS, Vue.js -->
+                    <div class="bg-slate-400/20 p-6 rounded-lg shadow-lg flex flex-col items-center w-full mb-2">
+                        <div class="w-full mb-2">
+                            <div class="mb-5">
+                                <div class="flex flex-row justify-between">
+                                    <h3 class="text-gray-300 text-sm">Bootstrap</h3>
+                                    <h3 class="text-gray-300 text-sm"><span class="skill-percentage"
+                                            data-percentage="85">0</span>%</h3>
+                                </div>
+                                <div class="w-full bg-gray-700 rounded-full h-2">
+                                    <div class="bg-green-400 h-2 rounded-full skill-bar" data-percentage="81"
+                                        style="width: 0%"></div>
+                                </div>
+                            </div>
+                            <div class="mb-5">
+                                <div class="flex flex-row justify-between">
+                                    <h3 class="text-gray-300 text-sm">Tailwind CSS</h3>
+                                    <h3 class="text-gray-300 text-sm"><span class="skill-percentage"
+                                            data-percentage="90">0</span>%</h3>
+                                </div>
+                                <div class="w-full bg-gray-700 rounded-full h-2">
+                                    <div class="bg-green-400 h-2 rounded-full skill-bar" data-percentage="86"
+                                        style="width: 0%"></div>
+                                </div>
+                            </div>
+                            <div>
+                                <div class="flex flex-row justify-between">
+                                    <h3 class="text-gray-300 text-sm">TypeScript</h3>
+                                    <h3 class="text-gray-300 text-sm"><span class="skill-percentage"
+                                            data-percentage="80">0</span>%</h3>
+                                </div>
+                                <div class="w-full bg-gray-700 rounded-full h-2">
+                                    <div class="bg-green-400 h-2 rounded-full skill-bar" data-percentage="40"
+                                        style="width: 0%"></div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- Skill Card: Node.js, SQL, TypeScript -->
+                    <div class="bg-slate-400/20 p-6 rounded-lg shadow-lg flex flex-col items-center w-full mb-2">
+                        <div class="w-full mb-2">
+                            <div class="mb-5">
+                                <div class="flex flex-row justify-between">
+                                    <h3 class="text-gray-300 text-sm">Node.js</h3>
+                                    <h3 class="text-gray-300 text-sm"><span class="skill-percentage"
+                                            data-percentage="78">0</span>%</h3>
+                                </div>
+                                <div class="w-full bg-gray-700 rounded-full h-2">
+                                    <div class="bg-green-400 h-2 rounded-full skill-bar" data-percentage="78"
+                                        style="width: 0%"></div>
+                                </div>
+                            </div>
+                            <div class="mb-5">
+                                <div class="flex flex-row justify-between">
+                                    <h3 class="text-gray-300 text-sm">SQL</h3>
+                                    <h3 class="text-gray-300 text-sm"><span class="skill-percentage"
+                                            data-percentage="75">0</span>%</h3>
+                                </div>
+                                <div class="w-full bg-gray-700 rounded-full h-2">
+                                    <div class="bg-green-400 h-2 rounded-full skill-bar" data-percentage="75"
+                                        style="width: 0%"></div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="bg-slate-400/20 p-6 rounded-lg shadow-lg flex flex-col items-center w-full mb-2">
+                        <div class="w-full mb-2">
+                            <div class="mb-5">
+                                <div class="flex flex-row justify-between">
+                                    <h3 class="text-gray-300 text-sm">Vite</h3>
+                                    <h3 class="text-gray-300 text-sm"><span class="skill-percentage"
+                                            data-percentage="78">0</span>%</h3>
+                                </div>
+                                <div class="w-full bg-gray-700 rounded-full h-2">
+                                    <div class="bg-green-400 h-2 rounded-full skill-bar" data-percentage="85"
+                                        style="width: 0%"></div>
+                                </div>
+                            </div>
+                            <div class="mb-5">
+                                <div class="flex flex-row justify-between">
+                                    <h3 class="text-gray-300 text-sm">Vue.js</h3>
+                                    <h3 class="text-gray-300 text-sm"><span class="skill-percentage"
+                                            data-percentage="78">0</span>%</h3>
+                                </div>
+                                <div class="w-full bg-gray-700 rounded-full h-2">
+                                    <div class="bg-green-400 h-2 rounded-full skill-bar" data-percentage="80"
+                                        style="width: 0%"></div>
+                                </div>
+                            </div>
+                            <div class="mb-5">
+                                <div class="flex flex-row justify-between">
+                                    <h3 class="text-gray-300 text-sm">React</h3>
+                                    <h3 class="text-gray-300 text-sm"><span class="skill-percentage"
+                                            data-percentage="75">0</span>%</h3>
+                                </div>
+                                <div class="w-full bg-gray-700 rounded-full h-2">
+                                    <div class="bg-green-400 h-2 rounded-full skill-bar" data-percentage="40"
+                                        style="width: 0%"></div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Projects section -->
+        <section class="md:pt-20 mt-40 md:px-20 px-2" id="projects">
+            <div class="w-fit">
+                <h2 class="lg:text-2xl font-thin text-gray-300 pb-2 flex md:text-2xl sm:text-2xl">Projects <span>
+                        <hr class="w-30 mt-5 ml-2 text-gray-300">
+                    </span></h2>
+            </div>
+            <div class="">
+                <div class="flex flex-col items-center justify-center mt-15">
+                    <h1 class="text-white text-3xl md:text-2xl lg:text-3xl font-bold text-center">
+                        My Portfolio
+                    </h1>
+                    <div class="mt-15 flex flex-col md:flex-row items-center justify-center gap-8">
+                        <div class="w-full md:w-1/2 flex justify-center mb-2 md:mb-0 fade-in-up">
+                            <h1
+                                class="text-gray-200 max-w-4xl text-base sm:text-lg md:text-lg lg:text-2xl text-center md:text-left px-2">
+                                It is built using modern web technologies including HTML, CSS
+                                (with Tailwind CSS) and JavaScript. The site features animated sections, responsive
+                                layouts,
+                                and
+                                interactive elements to provide a professional and engaging overview of my work and
+                                capabilities.
+                            </h1>
+                        </div>
+                        <div class="max-w-md mx-auto bg-white rounded-xl shadow-md overflow-hidden md:max-w-2xl border-1 border-green-400 fade-in-up"
+                            style="transition-delay: 100ms;">
+                            <!-- Card Header -->
+                            <div class="p-4 bg-gray-800 border-b">
+                                <h2 class="text-xl font-semibold text-gray-200">Photo Gallery</h2>
+                                <p class="text-sm text-gray-400">Click to view images</p>
+                            </div>
+
+                            <!-- Image Display Area -->
+                            <div class="relative h-64 bg-black">
+                                <!-- Current Image -->
+                                <img id="current-image" src="" alt="Gallery image 1"
+                                    class="w-full h-full object-cover cursor-zoom-in transition-opacity duration-300">
+
+                                <!-- Navigation Controls -->
+                                <button id="prev-btn"
+                                    class="absolute left-2 top-1/2 -translate-y-1/2 bg-black/50 text-white p-2 rounded-full hover:bg-black/70 transition">
+                                    <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6" fill="none"
+                                        viewBox="0 0 24 24" stroke="currentColor">
+                                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                            d="M15 19l-7-7 7-7" />
+                                    </svg>
+                                </button>
+                                <button id="next-btn"
+                                    class="absolute right-2 top-1/2 -translate-y-1/2 bg-black/50 text-white p-2 rounded-full hover:bg-black/70 transition">
+                                    <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6" fill="none"
+                                        viewBox="0 0 24 24" stroke="currentColor">
+                                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                            d="M9 5l7 7-7 7" />
+                                    </svg>
+                                </button>
+
+                                <!-- Image Counter -->
+                                <div
+                                    class="absolute bottom-2 left-1/2 -translate-x-1/2 bg-black/50 text-white px-3 py-1 rounded-full text-sm">
+                                    <span id="image-counter">1/5</span>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- Fullscreen Overlay -->
+                        <div id="fullscreen-overlay"
+                            class="fixed inset-0 bg-black z-50 hidden items-center justify-center">
+                            <div class="relative w-full h-full flex items-center justify-center">
+                                <img id="fullscreen-image" src="" alt=""
+                                    class="max-w-full max-h-full object-contain cursor-zoom-out">
+
+                                <!-- Navigation Controls -->
+                                <button id="fs-prev-btn"
+                                    class="absolute left-4 top-1/2 -translate-y-1/2 bg-black/50 text-white p-3 rounded-full hover:bg-black/70 transition">
+                                    <svg xmlns="http://www.w3.org/2000/svg" class="h-8 w-8" fill="none"
+                                        viewBox="0 0 24 24" stroke="currentColor">
+                                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                            d="M15 19l-7-7 7-7" />
+                                    </svg>
+                                </button>
+                                <button id="fs-next-btn"
+                                    class="absolute right-4 top-1/2 -translate-y-1/2 bg-black/50 text-white p-3 rounded-full hover:bg-black/70 transition">
+                                    <svg xmlns="http://www.w3.org/2000/svg" class="h-8 w-8" fill="none"
+                                        viewBox="0 0 24 24" stroke="currentColor">
+                                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                            d="M9 5l7 7-7 7" />
+                                    </svg>
+                                </button>
+
+                                <!-- Close Button -->
+                                <button id="close-fs-btn"
+                                    class="absolute top-4 right-4 bg-black/50 text-white p-2 rounded-full hover:bg-black/70 transition">
+                                    <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6" fill="none"
+                                        viewBox="0 0 24 24" stroke="currentColor">
+                                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                            d="M6 18L18 6M6 6l12 12" />
+                                    </svg>
+                                </button>
+
+                                <!-- Image Counter -->
+                                <div
+                                    class="absolute bottom-4 left-1/2 -translate-x-1/2 bg-black/50 text-white px-4 py-2 rounded-full text-lg">
+                                    <span id="fs-image-counter">1/5</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- 2nd project -->
+                <div class="flex flex-col items-center justify-center mt-40">
+                    <h1 class="text-white text-3xl md:text-2xl lg:text-3xl font-bold text-center">
+                        RideEase
+                    </h1>
+                    <div class="mt-15 flex flex-col md:flex-row items-center justify-center gap-8">
+                        <div class="max-w-md mx-auto bg-white rounded-xl shadow-md overflow-hidden md:max-w-2xl border-1 border-green-400 fade-in-up"
+                            style="transition-delay: 100ms;">
+                            <!-- Card Header -->
+                            <div class="p-4 bg-gray-800 border-b">
+                                <h2 class="text-xl font-semibold text-gray-200">Photo Gallery</h2>
+                                <p class="text-sm text-gray-400">Click to view images</p>
+                            </div>
+
+                            <!-- Image Display Area -->
+                            <div class="relative h-64 bg-black">
+                                <!-- Current Image -->
+                                <img id="current-images" src="" alt="Gallery images2 1"
+                                    class="w-full h-full object-cover cursor-zoom-in transition-opacity duration-300">
+
+                                <!-- Navigation Controls -->
+                                <button id="prev-btns"
+                                    class="absolute left-2 top-1/2 -translate-y-1/2 bg-black/50 text-white p-2 rounded-full hover:bg-black/70 transition">
+                                    <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6" fill="none"
+                                        viewBox="0 0 24 24" stroke="currentColor">
+                                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                            d="M15 19l-7-7 7-7" />
+                                    </svg>
+                                </button>
+                                <button id="next-btns"
+                                    class="absolute right-2 top-1/2 -translate-y-1/2 bg-black/50 text-white p-2 rounded-full hover:bg-black/70 transition">
+                                    <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6" fill="none"
+                                        viewBox="0 0 24 24" stroke="currentColor">
+                                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                            d="M9 5l7 7-7 7" />
+                                    </svg>
+                                </button>
+
+                                <!-- Image Counter -->
+                                <div
+                                    class="absolute bottom-2 left-1/2 -translate-x-1/2 bg-black/50 text-white px-3 py-1 rounded-full text-sm">
+                                    <span id="image-counters">1/5</span>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="w-full md:w-1/2 flex justify-center mb-2 md:mb-0 fade-in-up">
+                            <h1
+                                class="text-gray-200 max-w-4xl text-base sm:text-lg md:text-lg lg:text-2xl text-center md:text-left px-2">
+                                Ride Ease is built using Vue3, Tailwindcss, Node.js and Sequelize to create a modern car
+                                rental website designed to make booking vehicles fast, easy
+                                and
+                                reliable. The platform allows users to browse a wide selection of cars, compare prices,
+                                and
+                                reserve vehicles online with just a few clicks. Whether you need a car for business,
+                                travel, or daily use.
+                            </h1>
+                        </div>
+
+                        <!-- Fullscreen Overlay -->
+                        <div id="fullscreen-overlays"
+                            class="fixed inset-0 bg-black z-50 hidden items-center justify-center">
+                            <div class="relative w-full h-full flex items-center justify-center">
+                                <img id="fullscreen-images" src="" alt=""
+                                    class="max-w-full max-h-full object-contain cursor-zoom-out">
+
+                                <!-- Navigation Controls -->
+                                <button id="fs-prev-btns"
+                                    class="absolute left-4 top-1/2 -translate-y-1/2 bg-black/50 text-white p-3 rounded-full hover:bg-black/70 transition">
+                                    <svg xmlns="http://www.w3.org/2000/svg" class="h-8 w-8" fill="none"
+                                        viewBox="0 0 24 24" stroke="currentColor">
+                                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                            d="M15 19l-7-7 7-7" />
+                                    </svg>
+                                </button>
+                                <button id="fs-next-btns"
+                                    class="absolute right-4 top-1/2 -translate-y-1/2 bg-black/50 text-white p-3 rounded-full hover:bg-black/70 transition">
+                                    <svg xmlns="http://www.w3.org/2000/svg" class="h-8 w-8" fill="none"
+                                        viewBox="0 0 24 24" stroke="currentColor">
+                                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                            d="M9 5l7 7-7 7" />
+                                    </svg>
+                                </button>
+
+                                <!-- Close Button -->
+                                <button id="close-fs-btns"
+                                    class="absolute top-4 right-4 bg-black/50 text-white p-2 rounded-full hover:bg-black/70 transition">
+                                    <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6" fill="none"
+                                        viewBox="0 0 24 24" stroke="currentColor">
+                                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                            d="M6 18L18 6M6 6l12 12" />
+                                    </svg>
+                                </button>
+
+                                <!-- Image Counter -->
+                                <div
+                                    class="absolute bottom-4 left-1/2 -translate-x-1/2 bg-black/50 text-white px-4 py-2 rounded-full text-lg">
+                                    <span id="fs-image-counters">1/5</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <div class="bg-gray-800 text-gray-400 py-6 mt-20">
+            <div class="container mx-auto text-center">
+                <div class="w-full items-center flex flex-col">
+                    <ul class="flex flex-row mt-2 gap-10">
+                        <li class="mx-2">
+                            <a href="" target="_blank" aria-label="GitHub">
+                                <i class="fa-brands fa-github text-2xl text-gray-400 hover:text-green-500"></i>
+                            </a>
+                        </li>
+
+                        <li class="mx-2">
+                            <a href="" target="_blank" aria-label="upwork">
+                                <i class="fa-brands fa-square-upwork text-2xl text-gray-400 hover:text-green-500"></i>
+                            </a>
+                        </li>
+
+                        <li class="mx-2">
+                            <a href="" target="_blank" aria-label="facebook">
+                                <i class="fa-brands fa-facebook text-2xl text-gray-400 hover:text-green-500"></i>
+                            </a>
+                        </li>
+
+                        <li class="mx-2">
+                            <a href="#" target="_blank" aria-label="Email">
+                                <i class="fa-solid fa-envelope text-2xl text-gray-400 hover:text-green-500">
+                                    <title>Email</title>
+                                </i>
+                            </a>
+                        </li>
+
+                    </ul>
+                </div>
+            </div>
+            <p class="text-sm text-center pt-5">© 2025 Geo Obero. All rights reserved.</p>
+    </footer>
+
+    <script>
+
+        // Parallax effect for hero section
+        document.addEventListener('DOMContentLoaded', function () {
+            const parallaxHero = document.getElementById('parallax-hero');
+            const parallaxBg = document.getElementById('parallax-bg');
+            const parallaxImg = document.getElementById('parallax-img');
+            const parallaxContent = document.getElementById('parallax-content');
+            function parallaxScroll() {
+                const scrollY = window.scrollY;
+                // Move background slower
+                parallaxBg.style.transform = `translateY(${scrollY * 0.2}px)`;
+                // Move image slightly slower
+                if (parallaxImg) parallaxImg.style.transform = `translateY(${scrollY * 0.3}px) scale(1.05)`;
+                // Move content slightly faster
+                if (parallaxContent) parallaxContent.style.transform = `translateY(${scrollY * 0.15}px)`;
+            }
+            window.addEventListener('scroll', parallaxScroll, { passive: true });
+        });
+
+        // Smooth scroll for navigation links
+        document.addEventListener('DOMContentLoaded', function () {
+            // Section IDs in order of appearance
+            const sectionIds = ['about', 'services-animated', 'skills', 'projects'];
+            const navLinks = Array.from(document.querySelectorAll('.nav-link'));
+            const sections = sectionIds.map(id => document.getElementById(id));
+
+            function onScrollHighlight() {
+                let scrollPos = window.scrollY || window.pageYOffset;
+                let offset = 120; // adjust for fixed navbar height
+
+                let activeIndex = 0;
+                for (let i = 0; i < sections.length; i++) {
+                    if (sections[i]) {
+                        const top = sections[i].getBoundingClientRect().top + window.scrollY - offset;
+                        if (scrollPos >= top) {
+                            activeIndex = i;
+                        }
+                    }
+                }
+                navLinks.forEach((link, idx) => {
+                    if (idx === activeIndex) {
+                        link.classList.add('text-green-400', 'font-bold', 'active', 'what-i-do-heading-active');
+                        // Add a class to trigger the .what-i-do-heading::after underline
+                        link.classList.add('what-i-do-heading-active');
+                    } else {
+                        link.classList.remove('text-green-400', 'font-bold', 'active', 'what-i-do-heading-active');
+                    }
+                });
+            }
+
+            window.addEventListener('scroll', onScrollHighlight, { passive: true });
+            onScrollHighlight();
+        });
+
+        // Typing effect
+        const roleText = "FullStack Developer";
+        let charIdx = 0;
+        let typingForward = true;
+        const typingRoleSpan = document.getElementById("typing");
+        typingRoleSpan.classList.add("typing-cursor");
+        function typeFullStack() {
+            if (typingForward) {
+                if (charIdx <= roleText.length) {
+                    typingRoleSpan.textContent = roleText.substring(0, charIdx);
+                    charIdx++;
+                    setTimeout(typeFullStack, 120);
+                } else {
+                    typingForward = false;
+                    setTimeout(typeFullStack, 2000);
+                }
+            } else {
+                if (charIdx >= 0) {
+                    typingRoleSpan.textContent = roleText.substring(0, charIdx);
+                    charIdx--;
+                    setTimeout(typeFullStack, 50);
+                } else {
+                    typingForward = true;
+                    setTimeout(typeFullStack, 400);
+                }
+            }
+        }
+        typeFullStack();
+
+        // Only show service cards when in view using Intersection Observer
+        document.addEventListener('DOMContentLoaded', function () {
+            const cards = document.querySelectorAll('.service-card');
+            if ('IntersectionObserver' in window) {
+                const observer = new IntersectionObserver((entries, obs) => {
+                    entries.forEach(entry => {
+                        if (entry.isIntersecting) {
+                            entry.target.classList.add('!opacity-100', '!translate-y-0');
+                            obs.unobserve(entry.target);
+                        }
+                    });
+                }, { threshold: 0.2 });
+                cards.forEach(card => observer.observe(card));
+            } else {
+                // fallback for old browsers
+                cards.forEach(card => card.classList.add('!opacity-100', '!translate-y-0'));
+            }
+        });
+
+        document.addEventListener('DOMContentLoaded', function () {
+            function animateSkillBars() {
+                const bars = document.querySelectorAll('.skill-bar');
+                const percentages = document.querySelectorAll('.skill-percentage');
+                bars.forEach((bar, i) => {
+                    const target = parseInt(bar.getAttribute('data-percentage'), 10);
+                    let width = 0;
+                    let percent = 0;
+                    const percentageSpan = percentages[i];
+                    const interval = setInterval(() => {
+                        if (width >= target) {
+                            clearInterval(interval);
+                            bar.style.width = target + '%';
+                            percentageSpan.textContent = target;
+                        } else {
+                            width++;
+                            bar.style.width = width + '%';
+                            percentageSpan.textContent = width;
+                        }
+                    }, 8);
+                });
+            }
+
+            const skillsSection = document.getElementById('skills');
+            let animated = false;
+            function onScroll() {
+                const rect = skillsSection.getBoundingClientRect();
+                if (!animated && rect.top < window.innerHeight && rect.bottom > 0) {
+                    animateSkillBars();
+                    animated = true;
+                    window.removeEventListener('scroll', onScroll);
+                }
+            }
+            window.addEventListener('scroll', onScroll);
+            onScroll();
+        });
+
+        // Image gallery logic
+        document.addEventListener('DOMContentLoaded', function () {
+            const images = [
+                "images/1.PNG",
+                "images/2.PNG",
+                "images/3.PNG",
+
+            ];
+
+            // Card elements
+            const currentImage = document.getElementById('current-image');
+            const prevBtn = document.getElementById('prev-btn');
+            const nextBtn = document.getElementById('next-btn');
+            const imageCounter = document.getElementById('image-counter');
+            const thumbnails = document.querySelectorAll('.thumbnail');
+
+            // Fullscreen elements
+            const fullscreenOverlay = document.getElementById('fullscreen-overlay');
+            const fullscreenImage = document.getElementById('fullscreen-image');
+            const fsPrevBtn = document.getElementById('fs-prev-btn');
+            const fsNextBtn = document.getElementById('fs-next-btn');
+            const closeFsBtn = document.getElementById('close-fs-btn');
+            const fsImageCounter = document.getElementById('fs-image-counter');
+
+            let currentIndex = 0;
+            let isFullscreen = false;
+
+            // Update displayed image
+            function updateImage(index) {
+                currentIndex = index;
+                currentImage.src = images[index];
+                currentImage.alt = `Gallery image ${index + 1}`;
+                imageCounter.textContent = `${index + 1}/${images.length}`;
+                fsImageCounter.textContent = `${index + 1}/${images.length}`;
+
+                if (isFullscreen) {
+                    fullscreenImage.src = images[index];
+                    fullscreenImage.alt = `Gallery image ${index + 1}`;
+                }
+
+                // Update active thumbnail
+                thumbnails.forEach((thumb, i) => {
+                    thumb.classList.toggle('border-blue-500', i === index);
+                    thumb.classList.toggle('border-transparent', i !== index);
+                });
+            }
+
+            // Next image
+            function nextImage() {
+                const newIndex = (currentIndex + 1) % images.length;
+                updateImage(newIndex);
+            }
+
+            // Previous image
+            function prevImage() {
+                const newIndex = (currentIndex - 1 + images.length) % images.length;
+                updateImage(newIndex);
+            }
+
+            // Open fullscreen
+            function openFullscreen() {
+                isFullscreen = true;
+                fullscreenImage.src = images[currentIndex];
+                fullscreenImage.alt = `Gallery image ${currentIndex + 1}`;
+                fullscreenOverlay.classList.remove('hidden');
+                fullscreenOverlay.classList.add('flex');
+                document.body.style.overflow = 'hidden';
+            }
+
+            // Close fullscreen
+            function closeFullscreen() {
+                isFullscreen = false;
+                fullscreenOverlay.classList.add('hidden');
+                fullscreenOverlay.classList.remove('flex');
+                document.body.style.overflow = '';
+            }
+
+            // Event listeners for card
+            currentImage.addEventListener('click', openFullscreen);
+            nextBtn.addEventListener('click', nextImage);
+            prevBtn.addEventListener('click', prevImage);
+
+            // Event listeners for fullscreen
+            fullscreenImage.addEventListener('click', closeFullscreen);
+            fsNextBtn.addEventListener('click', nextImage);
+            fsPrevBtn.addEventListener('click', prevImage);
+            closeFsBtn.addEventListener('click', closeFullscreen);
+
+            // Keyboard navigation
+            document.addEventListener('keydown', function (e) {
+                if (!isFullscreen) return;
+
+                if (e.key === 'ArrowRight') nextImage();
+                if (e.key === 'ArrowLeft') prevImage();
+                if (e.key === 'Escape') closeFullscreen();
+            });
+
+            // Initialize
+            updateImage(0);
+        });
+        document.addEventListener('DOMContentLoaded', function () {
+            const images2 = [
+                "images/ride-ease1.PNG",
+                "images/ride-ease3.PNG",
+                "images/ride-ease2.PNG",
+
+            ];
+
+            // Card elements
+            const currentImages = document.getElementById('current-images');
+            const prevBtns = document.getElementById('prev-btns');
+            const nextBtns = document.getElementById('next-btns');
+            const imageCounters = document.getElementById('image-counters');
+            const thumbnailss = document.querySelectorAll('.thumbnails');
+
+            // Fullscreen elements
+            const fullscreenOverlays = document.getElementById('fullscreen-overlays');
+            const fullscreenImages = document.getElementById('fullscreen-images');
+            const fsPrevBtns = document.getElementById('fs-prev-btns');
+            const fsNextBtns = document.getElementById('fs-next-btns');
+            const closeFsBtns = document.getElementById('close-fs-btns');
+            const fsImageCounters = document.getElementById('fs-image-counters');
+
+            let currentIndex2 = 0;
+            let isFullscreen2 = false;
+
+            // Update displayed image
+            function updateImages(index) {
+                currentIndex2 = index;
+                currentImages.src = images2[index];
+                currentImages.alt = `Gallery images ${index + 1}`;
+                imageCounters.textContent = `${index + 1}/${images2.length}`;
+                fsImageCounters.textContent = `${index + 1}/${images2.length}`;
+
+                if (isFullscreen2) {
+                    fullscreenImages.src = images2[index];
+                    fullscreenImages.alt = `Gallery images ${index + 1}`;
+                }
+
+                // Update active thumbnail
+                thumbnailss.forEach((thumbs, i) => {
+                    thumbs.classList.toggle('border-blue-500', i === index);
+                    thumbs.classList.toggle('border-transparent', i !== index);
+                });
+            }
+
+            // Next image
+            function nextImages() {
+                const newIndex2 = (currentIndex2 + 1) % images2.length;
+                updateImages(newIndex2);
+            }
+
+            // Previous image
+            function prevImages() {
+                const newIndex2 = (currentIndex2 - 1 + images2.length) % images2.length;
+                updateImages(newIndex2);
+            }
+
+            // Open fullscreen
+            function openFullscreens() {
+                isFullscreen2 = true;
+                fullscreenImages.src = images2[currentIndex2];
+                fullscreenImages.alt = `Gallery images ${currentIndex2 + 1}`;
+                fullscreenOverlays.classList.remove('hidden');
+                fullscreenOverlays.classList.add('flex');
+                document.body.style.overflow = 'hidden';
+            }
+
+            // Close fullscreen
+            function closeFullscreens() {
+                isFullscreen2 = false;
+                fullscreenOverlays.classList.add('hidden');
+                fullscreenOverlays.classList.remove('flex');
+                document.body.style.overflow = '';
+            }
+
+            // Event listeners for card
+            currentImages.addEventListener('click', openFullscreens);
+            nextBtns.addEventListener('click', nextImages);
+            prevBtns.addEventListener('click', prevImages);
+
+            // Event listeners for fullscreen
+            fullscreenImages.addEventListener('click', closeFullscreens);
+            fsNextBtns.addEventListener('click', nextImages);
+            fsPrevBtns.addEventListener('click', prevImages);
+            closeFsBtns.addEventListener('click', closeFullscreens);
+
+            // Keyboard navigation
+            document.addEventListener('keydown', function (e) {
+                if (!isFullscreen2) return;
+
+                if (e.key === 'ArrowRight') nextImages();
+                if (e.key === 'ArrowLeft') prevImages();
+                if (e.key === 'Escape') closeFullscreens();
+            });
+
+            // Initialize
+            updateImages(0);
+        });
+
+        // Fade-in effect for projects section
+        document.addEventListener('DOMContentLoaded', function () {
+            const fadeEls = document.querySelectorAll('#projects .fade-in-up');
+            if ('IntersectionObserver' in window) {
+                const observer = new IntersectionObserver((entries, obs) => {
+                    entries.forEach(entry => {
+                        if (entry.isIntersecting) {
+                            entry.target.classList.add('visible');
+                            obs.unobserve(entry.target);
+                        }
+                    });
+                }, { threshold: 0.2 });
+                fadeEls.forEach(el => observer.observe(el));
+            } else {
+                fadeEls.forEach(el => el.classList.add('visible'));
+            }
+        });
+
+    </script>
+    <script src="https://cdn.jsdelivr.net/npm/flowbite@3.1.2/dist/flowbite.min.js"></script>
+</body>
+
+</html>

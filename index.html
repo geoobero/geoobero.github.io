@@ -12,16 +12,18 @@
         crossorigin="anonymous" referrerpolicy="no-referrer" />
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Pixelify+Sans:wght@400..700&display=swap" rel="stylesheet">
+    <link
+        href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&family=Pixelify+Sans:wght@400..700&display=swap"
+        rel="stylesheet">
     <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
 </head>
 
 <body>
 
-    <nav class=" bg-black/80 fixed top-0 left-0 right-0 z-50 border-gray-700 p-0 my-0">
+    <nav class="site-nav bg-white fixed top-0 left-0 right-0 z-50 border-gray-700 p-0 my-0">
         <div class="max-w-screen-xl flex flex-wrap items-center justify-between mx-auto p-4">
-            <a href="#" class="flex items-center space-x-3 rtl:space-x-reverse">
-
+            <a href="#about" class="brand-link flex items-center space-x-3 rtl:space-x-reverse">
+                Geo Obero
             </a>
             <button data-collapse-toggle="navbar-solid-bg" type="button"
                 class="right-0 inline-flex items-center p-2 w-10 h-10 justify-center text-sm text-gray-500 rounded-lg md:hidden hover:bg-gray-100 focus:outline-none focus:ring-2 focus:ring-gray-200 dark:text-gray-400 dark:hover:bg-gray-700 dark:focus:ring-gray-600"
@@ -35,7 +37,7 @@
             </button>
             <div class="hidden w-full md:block md:w-auto" id="navbar-solid-bg">
                 <ul
-                    class="flex flex-col font-medium mt-4 rounded-lg bg-gray-50 md:space-x-8 rtl:space-x-reverse md:flex-row md:mt-0 md:border-0 md:bg-transparent dark:bg-gray-800 md:dark:bg-transparent dark:border-gray-700">
+                    class="nav-list flex flex-col font-medium mt-4 rounded-lg bg-gray-50 md:space-x-8 rtl:space-x-reverse md:flex-row md:mt-0 md:border-0 md:bg-transparent dark:bg-gray-800 md:dark:bg-transparent dark:border-gray-700">
                     <li>
                         <a href="#about"
                             class="nav-link block py-2 px-3 font-normal text-md md:p-0 text-white rounded-sm hover:bg-gray-100 md:hover:bg-transparent md:border-0 md:hover:text-amber-200 dark:text-white md:dark:hover:text-amber-200 dark:hover:bg-gray-700 dark:hover:green-400 md:dark:hover:bg-transparent what-i-do-heading">
@@ -63,7 +65,7 @@
     <header>
         <section class="pt-20">
             <div
-                class="xl:w-[70%] lg:w-[80%] md:w-[90%] mx-auto relative md:px-0 px-4 md:my-10 bg-[#111111] rounded-xl overflow-hidden">
+                class="hero-shell xl:w-[70%] lg:w-[80%] md:w-[90%] mx-auto relative md:px-0 px-4 md:my-10 bg-[#111111] rounded-xl overflow-hidden">
 
                 <!-- Parallax Container -->
                 <div class="w-full h-full flex flex-col items-center bg-black relative overflow-hidden"
@@ -76,9 +78,10 @@
                     <section class="w-full relative flex items-center flex-col lg:flex-row z-10" id="about">
                         <div class="lg:block md:hidden sm:hidden hidden" id="parallax-img-container"
                             style="will-change: transform;">
-                            <img class="lg:w-1/2" src="images/IMG_2239.JPG" alt="port image" id="parallax-img">
+                            <img class="hero-photo lg:w-1/2" src="images/profile-pic.jpg" alt="Geo Obero portrait"
+                                id="parallax-img">
                         </div>
-                        <div class="md:mt-20 animate-slide-in-lr lg:absolute lg:left-[40%] md:left-[30%] lg:w-[55%] lg:p-12 sm:p-6 p-4 flex flex-col justify-center bg-[#222222]"
+                        <div class="hero-card md:mt-20 animate-slide-in-lr lg:absolute lg:left-[40%] md:left-[30%] lg:w-[55%] lg:p-12 sm:p-6 p-4 flex flex-col justify-center bg-[#222222]"
                             id="parallax-content" style="will-change: transform;">
                             <p class="text-gray-200 text-md mb-1 typing">
                                 <span id="typing"></span>
@@ -100,7 +103,7 @@
                     </section>
                 </div>
             </div>
-            <div class="w-full items-center flex flex-col">
+            <div class="social-strip w-full items-center flex flex-col">
                 <ul class="flex flex-row mt-2 gap-10">
                     <li class="mx-2">
                         <a href="https://github.com/geoobero" target="_blank" aria-label="GitHub">
@@ -109,7 +112,8 @@
                     </li>
 
                     <li class="mx-2">
-                        <a href="" target="_blank" aria-label="upwork">
+                        <a href="https://www.upwork.com/freelancers/~01d54b77a30fa9f03c" target="_blank"
+                            aria-label="upwork">
                             <i class="fa-brands fa-square-upwork text-2xl text-gray-400 hover:text-green-500"></i>
                         </a>
                     </li>
@@ -128,11 +132,11 @@
     <main>
 
         <section>
-            
+
         </section>
 
         <!-- Services section -->
-        <section class="md:pt-20 mt-40 md:px-20 px-2" id="services-animated">
+        <section class="section-block md:pt-20 mt-40 md:px-20 px-2" id="services-animated">
             <div class="w-fit">
                 <h2 class="lg:text-2xl font-thin text-gray-300 pb-2 flex md:text-2xl sm:text-2xl">Services <span>
                         <hr class="w-30 mt-5 ml-2 text-gray-300">
@@ -142,7 +146,7 @@
             <div class="mt-15">
                 <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-2 md:px-0 lg:px-15 gap-6 lg:gap-15 mt-10">
                     <div
-                        class="bg-black p-6 rounded-lg shadow-lg opacity-0 translate-y-10 transition-all duration-700 service-card">
+                        class="ui-card bg-black p-6 rounded-lg shadow-lg opacity-0 translate-y-10 transition-all duration-700 service-card">
                         <div class="items-center flex flex-col justify-center">
                             <svg class="w-15 h-15 text-green-400 dark:text-green-400" aria-hidden="true"
                                 xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="none"
@@ -159,7 +163,7 @@
                         </div>
                     </div>
                     <div
-                        class="bg-black p-6 rounded-lg shadow-lg opacity-0 translate-y-10 transition-all duration-700 service-card">
+                        class="ui-card bg-black p-6 rounded-lg shadow-lg opacity-0 translate-y-10 transition-all duration-700 service-card">
                         <div class="items-center flex flex-col justify-center">
                             <svg class="w-15 h-15 text-green-400 dark:text-green-400" aria-hidden="true"
                                 xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="currentColor"
@@ -176,7 +180,7 @@
                         </div>
                     </div>
                     <div
-                        class="bg-black p-6 rounded-lg shadow-lg opacity-0 translate-y-10 transition-all duration-700 service-card">
+                        class="ui-card bg-black p-6 rounded-lg shadow-lg opacity-0 translate-y-10 transition-all duration-700 service-card">
                         <div class="items-center flex flex-col justify-center">
                             <svg class="w-15 h-15 text-green-400 dark:text-green-400" aria-hidden="true"
                                 xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="none"
@@ -191,7 +195,7 @@
                         </div>
                     </div>
                     <div
-                        class="bg-black p-6 rounded-lg shadow-lg opacity-0 translate-y-10 transition-all duration-700 service-card">
+                        class="ui-card bg-black p-6 rounded-lg shadow-lg opacity-0 translate-y-10 transition-all duration-700 service-card">
                         <div class="items-center flex flex-col justify-center">
                             <svg class="w-15 h-15 text-green-400 dark:text-green-400" aria-hidden="true"
                                 xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="none"
@@ -212,7 +216,7 @@
 
 
         <!-- Skills section -->
-        <section class="md:pt-20 mt-40 md:px-20 px-2" id="skills">
+        <section class="section-block md:pt-20 mt-40 md:px-20 px-2" id="skills">
             <div class="w-fit">
                 <h2 class="lg:text-2xl font-thin text-gray-300 pb-2 flex md:text-2xl sm:text-2xl">My Skills <span>
                         <hr class="w-30 mt-5 ml-2 text-gray-300">
@@ -301,145 +305,54 @@
             </section>
 
             <div class="mt-15">
-                <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-2 gap-3 lg:gap-5 mt-10 max-w-[1200px] mx-auto">
-                    <div
-                        class="bg-slate-400/20 p-6 rounded-lg shadow-lg flex flex-col items-center relative overflow-hidden">
-                        <div class="w-full mb-2 relative z-10">
-                            <div class="mb-5">
-                                <div class="flex flex-row justify-between">
-                                    <h3 class="text-gray-300 text-sm">HTML</h3>
-                                    <h3 class="text-gray-300 text-sm"><span class="skill-percentage"
-                                            data-percentage="95">0</span>%</h3>
-                                </div>
-                                <div class="w-full bg-gray-700 rounded-full h-2">
-                                    <div class="bg-green-400 h-2 rounded-full skill-bar" data-percentage="89"
-                                        style="width: 0%"></div>
-                                </div>
-                            </div>
-                            <div class="mb-5">
-                                <div class="flex flex-row justify-between">
-                                    <h3 class="text-gray-300 text-sm">CSS</h3>
-                                    <h3 class="text-gray-300 text-sm"><span class="skill-percentage"
-                                            data-percentage="90">0</span>%</h3>
-                                </div>
-                                <div class="w-full bg-gray-700 rounded-full h-2">
-                                    <div class="bg-green-400 h-2 rounded-full skill-bar" data-percentage="85"
-                                        style="width: 0%"></div>
-                                </div>
-                            </div>
-                            <div>
-                                <div class="flex flex-row justify-between">
-                                    <h3 class="text-gray-300 text-sm">JavaScript</h3>
-                                    <h3 class="text-gray-300 text-sm"><span class="skill-percentage"
-                                            data-percentage="88">0</span>%</h3>
-                                </div>
-                                <div class="w-full bg-gray-700 rounded-full h-2">
-                                    <div class="bg-green-400 h-2 rounded-full skill-bar" data-percentage="79"
-                                        style="width: 0%"></div>
-                                </div>
-                            </div>
+                <div class="skill-grid grid grid-cols-1 md:grid-cols-2 lg:grid-cols-2 gap-3 lg:gap-5 mt-10 max-w-[1200px] mx-auto">
+                    <div class="skill-card bg-slate-400/20 p-6 rounded-lg shadow-lg">
+                        <div class="skill-card-header">
+                            <span class="skill-card-kicker">Core</span>
+                            <h3>Frontend Foundations</h3>
+                        </div>
+                        <div class="skill-list">
+                            <span class="skill-pill">HTML</span>
+                            <span class="skill-pill">CSS</span>
+                            <span class="skill-pill">JavaScript</span>
                         </div>
                     </div>
-                    <!-- Skill Card: Bootstrap, Tailwind CSS, Vue.js -->
-                    <div class="bg-slate-400/20 p-6 rounded-lg shadow-lg flex flex-col items-center w-full mb-2">
-                        <div class="w-full mb-2">
-                            <div class="mb-5">
-                                <div class="flex flex-row justify-between">
-                                    <h3 class="text-gray-300 text-sm">Bootstrap</h3>
-                                    <h3 class="text-gray-300 text-sm"><span class="skill-percentage"
-                                            data-percentage="85">0</span>%</h3>
-                                </div>
-                                <div class="w-full bg-gray-700 rounded-full h-2">
-                                    <div class="bg-green-400 h-2 rounded-full skill-bar" data-percentage="81"
-                                        style="width: 0%"></div>
-                                </div>
-                            </div>
-                            <div class="mb-5">
-                                <div class="flex flex-row justify-between">
-                                    <h3 class="text-gray-300 text-sm">Tailwind CSS</h3>
-                                    <h3 class="text-gray-300 text-sm"><span class="skill-percentage"
-                                            data-percentage="90">0</span>%</h3>
-                                </div>
-                                <div class="w-full bg-gray-700 rounded-full h-2">
-                                    <div class="bg-green-400 h-2 rounded-full skill-bar" data-percentage="86"
-                                        style="width: 0%"></div>
-                                </div>
-                            </div>
-                            <div>
-                                <div class="flex flex-row justify-between">
-                                    <h3 class="text-gray-300 text-sm">TypeScript</h3>
-                                    <h3 class="text-gray-300 text-sm"><span class="skill-percentage"
-                                            data-percentage="80">0</span>%</h3>
-                                </div>
-                                <div class="w-full bg-gray-700 rounded-full h-2">
-                                    <div class="bg-green-400 h-2 rounded-full skill-bar" data-percentage="40"
-                                        style="width: 0%"></div>
-                                </div>
-                            </div>
+
+                    <div class="skill-card bg-slate-400/20 p-6 rounded-lg shadow-lg">
+                        <div class="skill-card-header">
+                            <span class="skill-card-kicker">UI</span>
+                            <h3>Styling Systems</h3>
+                        </div>
+                        <div class="skill-list">
+                            <span class="skill-pill">Bootstrap</span>
+                            <span class="skill-pill">Tailwind CSS</span>
+                            <span class="skill-pill">TypeScript</span>
                         </div>
                     </div>
-                    <!-- Skill Card: Node.js, SQL, TypeScript -->
-                    <div class="bg-slate-400/20 p-6 rounded-lg shadow-lg flex flex-col items-center w-full mb-2">
-                        <div class="w-full mb-2">
-                            <div class="mb-5">
-                                <div class="flex flex-row justify-between">
-                                    <h3 class="text-gray-300 text-sm">Node.js</h3>
-                                    <h3 class="text-gray-300 text-sm"><span class="skill-percentage"
-                                            data-percentage="78">0</span>%</h3>
-                                </div>
-                                <div class="w-full bg-gray-700 rounded-full h-2">
-                                    <div class="bg-green-400 h-2 rounded-full skill-bar" data-percentage="78"
-                                        style="width: 0%"></div>
-                                </div>
-                            </div>
-                            <div class="mb-5">
-                                <div class="flex flex-row justify-between">
-                                    <h3 class="text-gray-300 text-sm">SQL</h3>
-                                    <h3 class="text-gray-300 text-sm"><span class="skill-percentage"
-                                            data-percentage="75">0</span>%</h3>
-                                </div>
-                                <div class="w-full bg-gray-700 rounded-full h-2">
-                                    <div class="bg-green-400 h-2 rounded-full skill-bar" data-percentage="75"
-                                        style="width: 0%"></div>
-                                </div>
-                            </div>
+
+                    <div class="skill-card bg-slate-400/20 p-6 rounded-lg shadow-lg">
+                        <div class="skill-card-header">
+                            <span class="skill-card-kicker">Server</span>
+                            <h3>Backend & Data</h3>
+                        </div>
+                        <div class="skill-list">
+                            <span class="skill-pill">Node.js</span>
+                            <span class="skill-pill">SQL</span>
+                            <span class="skill-pill">Supabase</span>
+                            <span class="skill-pill">MongoDB Atlas</span>
                         </div>
                     </div>
-                    <div class="bg-slate-400/20 p-6 rounded-lg shadow-lg flex flex-col items-center w-full mb-2">
-                        <div class="w-full mb-2">
-                            <div class="mb-5">
-                                <div class="flex flex-row justify-between">
-                                    <h3 class="text-gray-300 text-sm">Vite</h3>
-                                    <h3 class="text-gray-300 text-sm"><span class="skill-percentage"
-                                            data-percentage="78">0</span>%</h3>
-                                </div>
-                                <div class="w-full bg-gray-700 rounded-full h-2">
-                                    <div class="bg-green-400 h-2 rounded-full skill-bar" data-percentage="85"
-                                        style="width: 0%"></div>
-                                </div>
-                            </div>
-                            <div class="mb-5">
-                                <div class="flex flex-row justify-between">
-                                    <h3 class="text-gray-300 text-sm">Vue.js</h3>
-                                    <h3 class="text-gray-300 text-sm"><span class="skill-percentage"
-                                            data-percentage="78">0</span>%</h3>
-                                </div>
-                                <div class="w-full bg-gray-700 rounded-full h-2">
-                                    <div class="bg-green-400 h-2 rounded-full skill-bar" data-percentage="80"
-                                        style="width: 0%"></div>
-                                </div>
-                            </div>
-                            <div class="mb-5">
-                                <div class="flex flex-row justify-between">
-                                    <h3 class="text-gray-300 text-sm">React</h3>
-                                    <h3 class="text-gray-300 text-sm"><span class="skill-percentage"
-                                            data-percentage="75">0</span>%</h3>
-                                </div>
-                                <div class="w-full bg-gray-700 rounded-full h-2">
-                                    <div class="bg-green-400 h-2 rounded-full skill-bar" data-percentage="40"
-                                        style="width: 0%"></div>
-                                </div>
-                            </div>
+
+                    <div class="skill-card bg-slate-400/20 p-6 rounded-lg shadow-lg">
+                        <div class="skill-card-header">
+                            <span class="skill-card-kicker">Tools</span>
+                            <h3>Frameworks & Build</h3>
+                        </div>
+                        <div class="skill-list">
+                            <span class="skill-pill">Vite</span>
+                            <span class="skill-pill">Vue.js</span>
+                            <span class="skill-pill">React</span>
+                            <span class="skill-pill">Next.js</span>
                         </div>
                     </div>
                 </div>
@@ -447,7 +360,7 @@
         </section>
 
         <!-- Projects section -->
-        <section class="md:pt-20 mt-40 md:px-20 px-2" id="projects">
+        <section class="section-block md:pt-20 mt-40 md:px-20 px-2" id="projects">
             <div class="w-fit">
                 <h2 class="lg:text-2xl font-thin text-gray-300 pb-2 flex md:text-2xl sm:text-2xl">Projects <span>
                         <hr class="w-30 mt-5 ml-2 text-gray-300">
@@ -456,21 +369,26 @@
             <div class="">
                 <div class="flex flex-col items-center justify-center mt-15">
                     <h1 class="text-white text-3xl md:text-2xl lg:text-3xl font-bold text-center">
-                        My Portfolio
+                        E-commerce website
                     </h1>
                     <div class="mt-15 flex flex-col md:flex-row items-center justify-center gap-8">
-                        <div class="w-full md:w-1/2 flex justify-center mb-2 md:mb-0 fade-in-up">
+                        <div class="project-copy w-full md:w-1/2 flex justify-center mb-2 md:mb-0 fade-in-up">
                             <h1
                                 class="text-gray-200 max-w-4xl text-base sm:text-lg md:text-lg lg:text-2xl text-center md:text-left px-2">
-                                It is built using modern web technologies including HTML, CSS
-                                (with Tailwind CSS) and JavaScript. The site features animated sections, responsive
-                                layouts,
-                                and
-                                interactive elements to provide a professional and engaging overview of my work and
-                                capabilities.
+                                StyleShop is a modern front-end e-commerce web app built with Next.js, React, and
+                                Tailwind CSS, with AI integration to enhance the user experience. I created a responsive
+                                storefront with reusable UI components, product display sections, and cart interactions
+                                for smooth browsing across devices. The project focused on building an attractive,
+                                user-friendly interface with strong visual design, interactive features, and modern
+                                AI-powered functionality.
                             </h1>
+                            <a class="project-link" href="https://styleshop-zeta.vercel.app/" target="_blank"
+                                rel="noopener noreferrer">
+                                View live project
+                                <i class="fa-solid fa-arrow-up-right-from-square"></i>
+                            </a>
                         </div>
-                        <div class="max-w-md mx-auto bg-white rounded-xl shadow-md overflow-hidden md:max-w-2xl border-1 border-green-400 fade-in-up"
+                        <div class="project-card max-w-md mx-auto bg-white rounded-xl shadow-md overflow-hidden md:max-w-2xl border-1 border-green-400 fade-in-up"
                             style="transition-delay: 100ms;">
                             <!-- Card Header -->
                             <div class="p-4 bg-gray-800 border-b">
@@ -558,10 +476,10 @@
                 <!-- 2nd project -->
                 <div class="flex flex-col items-center justify-center mt-40">
                     <h1 class="text-white text-3xl md:text-2xl lg:text-3xl font-bold text-center">
-                        RideEase
+                        EduHub
                     </h1>
                     <div class="mt-15 flex flex-col md:flex-row items-center justify-center gap-8">
-                        <div class="max-w-md mx-auto bg-white rounded-xl shadow-md overflow-hidden md:max-w-2xl border-1 border-green-400 fade-in-up"
+                        <div class="project-card max-w-md mx-auto bg-white rounded-xl shadow-md overflow-hidden md:max-w-2xl border-1 border-green-400 fade-in-up"
                             style="transition-delay: 100ms;">
                             <!-- Card Header -->
                             <div class="p-4 bg-gray-800 border-b">
@@ -600,17 +518,19 @@
                                 </div>
                             </div>
                         </div>
-                        <div class="w-full md:w-1/2 flex justify-center mb-2 md:mb-0 fade-in-up">
+                        <div class="project-copy w-full md:w-1/2 flex justify-center mb-2 md:mb-0 fade-in-up">
                             <h1
                                 class="text-gray-200 max-w-4xl text-base sm:text-lg md:text-lg lg:text-2xl text-center md:text-left px-2">
-                                Ride Ease is built using Vue3, Tailwindcss, Node.js and Sequelize to create a modern car
-                                rental website designed to make booking vehicles fast, easy
-                                and
-                                reliable. The platform allows users to browse a wide selection of cars, compare prices,
-                                and
-                                reserve vehicles online with just a few clicks. Whether you need a car for business,
-                                travel, or daily use.
+                                A SIMPLE student management system built with CRUD functionality and AI integration to
+                                showcase modern web development techniques. It is built with Next.js, Tailwindcss,
+                                Node.js, Supabase and Vercel for deployment It includes "signup" and a secure
+                                authentication and role-based access for both users and administrators.
                             </h1>
+                            <a class="project-link" href="https://student-management-one-mu.vercel.app/login"
+                                target="_blank" rel="noopener noreferrer">
+                                View live project
+                                <i class="fa-solid fa-arrow-up-right-from-square"></i>
+                            </a>
                         </div>
 
                         <!-- Fullscreen Overlay -->
@@ -662,27 +582,28 @@
     </main>
 
     <footer>
-        <div class="bg-gray-800 text-gray-400 py-6 mt-20">
+        <div class="site-footer bg-gray-800 text-gray-400 py-6 mt-20">
             <div class="container mx-auto text-center">
                 <div class="w-full flex flex-col items-center">
-                    <div class="absolute right-20">
-                        <h1>email:</h1>
-                        <h1>wryhtgeo@gmail.com</h1>
-                    </div>
+                    <a class="footer-email" href="mailto:wryhtgeo@gmail.com">wryhtgeo@gmail.com</a>
                     <ul class="flex flex-row mt-2 gap-6 md:gap-10 justify-center">
                         <li>
                             <a href="https://github.com/geoobero" target="_blank" aria-label="GitHub">
-                                <i class="fa-brands fa-github text-xl md:text-2xl text-gray-400 hover:text-green-500"></i>
+                                <i
+                                    class="fa-brands fa-github text-xl md:text-2xl text-gray-400 hover:text-green-500"></i>
                             </a>
                         </li>
                         <li>
-                            <a href="https://www.upwork.com/freelancers/~01d54b77a30fa9f03c" target="_blank" aria-label="upwork">
-                                <i class="fa-brands fa-square-upwork text-xl md:text-2xl text-gray-400 hover:text-green-500"></i>
+                            <a href="https://www.upwork.com/freelancers/~01d54b77a30fa9f03c" target="_blank"
+                                aria-label="upwork">
+                                <i
+                                    class="fa-brands fa-square-upwork text-xl md:text-2xl text-gray-400 hover:text-green-500"></i>
                             </a>
                         </li>
                         <li>
                             <a href="https://www.facebook.com/ge.yo.obero/" target="_blank" aria-label="facebook">
-                                <i class="fa-brands fa-facebook text-xl md:text-2xl text-gray-400 hover:text-green-500"></i>
+                                <i
+                                    class="fa-brands fa-facebook text-xl md:text-2xl text-gray-400 hover:text-green-500"></i>
                             </a>
                         </li>
                     </ul>
@@ -693,6 +614,19 @@
     </footer>
 
     <script>
+
+        // Float navbar after the user starts scrolling
+        document.addEventListener('DOMContentLoaded', function () {
+            const siteNav = document.querySelector('.site-nav');
+
+            function updateNavbarPosition() {
+                if (!siteNav) return;
+                siteNav.classList.toggle('site-nav-scrolled', window.scrollY > 24);
+            }
+
+            window.addEventListener('scroll', updateNavbarPosition, { passive: true });
+            updateNavbarPosition();
+        });
 
         // Parallax effect for hero section
         document.addEventListener('DOMContentLoaded', function () {
@@ -795,49 +729,12 @@
             }
         });
 
-        document.addEventListener('DOMContentLoaded', function () {
-            function animateSkillBars() {
-                const bars = document.querySelectorAll('.skill-bar');
-                const percentages = document.querySelectorAll('.skill-percentage');
-                bars.forEach((bar, i) => {
-                    const target = parseInt(bar.getAttribute('data-percentage'), 10);
-                    let width = 0;
-                    let percent = 0;
-                    const percentageSpan = percentages[i];
-                    const interval = setInterval(() => {
-                        if (width >= target) {
-                            clearInterval(interval);
-                            bar.style.width = target + '%';
-                            percentageSpan.textContent = target;
-                        } else {
-                            width++;
-                            bar.style.width = width + '%';
-                            percentageSpan.textContent = width;
-                        }
-                    }, 8);
-                });
-            }
-
-            const skillsSection = document.getElementById('skills');
-            let animated = false;
-            function onScroll() {
-                const rect = skillsSection.getBoundingClientRect();
-                if (!animated && rect.top < window.innerHeight && rect.bottom > 0) {
-                    animateSkillBars();
-                    animated = true;
-                    window.removeEventListener('scroll', onScroll);
-                }
-            }
-            window.addEventListener('scroll', onScroll);
-            onScroll();
-        });
-
         // Image gallery logic
         document.addEventListener('DOMContentLoaded', function () {
             const images = [
-                "images/1.PNG",
-                "images/2.PNG",
-                "images/3.PNG",
+                "images/styleshop1.PNG",
+                "images/styleshop-products.PNG",
+                "images/styleshop-contact.PNG",
 
             ];
 
@@ -934,9 +831,9 @@
         });
         document.addEventListener('DOMContentLoaded', function () {
             const images2 = [
-                "images/ride-ease1.PNG",
-                "images/ride-ease3.PNG",
-                "images/ride-ease2.PNG",
+                "images/Eduhub.PNG",
+                "images/Eduhub-helpCenter.PNG",
+                "images/Eduhub-chatbot.PNG",
 
             ];
 
